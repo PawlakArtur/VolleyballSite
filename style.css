@@ -1,0 +1,291 @@
+*{
+  box-sizing: border-box;
+}
+
+/* menu glowne */
+
+nav{
+  width: 100%;
+  margin: 0 0 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+nav ul{
+  list-style-type:none;
+  margin:10px 0 0;
+  padding:0;
+  
+  border:1px solid #CCC;
+  width: 100%;
+  
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+nav ul li{
+  border:2px solid transparent;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li:hover{
+  border-bottom:2px solid #86BED1;
+}
+
+nav ul li a{
+  display: inline-block;
+  text-decoration:none;
+  color: #000;  
+  margin: 0;
+  padding: 10px;
+}
+
+nav ul li .fa{
+  display: none;
+}
+
+nav ul li .fa-home{
+  display: inline-block;
+}
+
+
+/* menu druzyny */
+
+.teams{
+  position: relative;
+  top: 60px;
+  width: 80%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.teams ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  
+  border:1px solid #CCC;
+}
+
+.teams ul li {
+  border-top:1px solid #CCC;
+}
+
+.teams ul li:first-child {
+  border-top:none;
+}
+
+.teams ul li a:first-child {
+  width: 75%;
+  display:inline-block;
+  text-decoration:none;
+  background-color:#EEE;
+  padding:10px;
+  color: #777;
+  border:1px solid transparent;
+  border-right: 1px solid #CCC;
+}
+
+.teams ul li a:first-child:hover{
+  color: #404040;
+}
+
+.teams ul li a:last-child{
+  width: 25%;
+  display:inline-block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color:#EEE;
+  /* color:#00A0AA; */
+  color: #777;
+}
+
+.teams ul li a:last-child:hover{
+  color: #404040;
+}
+
+.teams ul li a:last-child:before{
+  font-family: 'FontAwesome';
+  content:"\f03a";
+}
+
+/*rozwijane menu*/
+.tournaments{
+  border-bottom: 1px solid #CCC;
+  margin: 2px 0;
+}
+
+.gold{
+  color: #FFDD00;
+}
+
+.silver{
+  color: #CFCFCF;
+}
+
+.bronze{
+  color: #915500;
+}
+
+.polStats, .braStats, .rusStats, .gerStats, .itStats, .fraStats{
+  display: none;
+}
+
+.stats{
+	display: none;
+	width: 100%;
+	background-color: #EEE;
+	margin: 0;
+	padding: 15px 15px 5px 5px;
+}
+
+.window{
+  position: relative;
+	display: inline-block;
+	width: 50%;
+	margin: 0;
+	padding: 5px 15px;
+  border: 1px solid #CCC;
+	background-color: #F7F7F7;
+}
+
+.triangleBorder{
+  position: absolute;
+  top: -11px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 11px 10px;
+  border-color: transparent transparent #CCC transparent;
+}
+
+.triangle{
+  position: absolute;
+  top: 2px;
+  left: -9px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 9px 10px 9px;
+  border-color: transparent transparent #F7F7F7 transparent;
+}
+
+.tournament{
+  color: #404040;
+  display: inline-block;
+  padding: 0 0 0 10px;  
+  width: 165px;
+}
+
+.tournamentTitle{
+  color: #404040;
+  position: relative;
+}
+
+.goldIoPol, .silverIoPol, .bronzeIoPol, .goldWcPol, .silverWcPol, .bronzeWcPol, .goldEcPol, .silverEcPol, .bronzeEcPol, .goldWlPol, .silverWlPol, .bronzeWlPol{
+  display: none;  
+}
+
+.goldIoBra, .silverIoBra, .bronzeIoBra, .goldWcBra, .silverWcBra, .bronzeWcBra, .goldWlBra, .silverWlBra, .bronzeWlBra{
+  display: none;  
+}
+
+.goldIoRus, .silverIoRus, .bronzeIoRus, .goldWcRus, .silverWcRus, .bronzeWcRus, .goldEcRus, .silverEcRus, .bronzeEcRus, .goldWlRus, .silverWlRus, .bronzeWlRus{
+  display: none;  
+}
+
+.goldIoGer, .silverIoGer, .bronzeIoGer, .goldWcGer, .silverWcGer, .bronzeWcGer, .goldEcGer, .silverEcGer, .bronzeEcGer, .goldWlGer, .silverWlGer, .bronzeWlGer{
+  display: none;  
+}
+
+.goldIoIt, .silverIoIt, .bronzeIoIt, .goldWcIt, .silverWcIt, .bronzeWcIt, .goldEcIt, .silverEcIt, .bronzeEcIt, .goldWlIt, .silverWlIt, .bronzeWlIt{
+  display: none;  
+}
+
+.goldIoFra, .silverIoFra, .bronzeIoFra, .goldWcFra, .silverWcFra, .bronzeWcFra, .goldEcFra, .silverEcFra, .bronzeEcFra, .goldWlFra, .silverWlFra, .bronzeWlFra{
+  display: none;  
+}
+
+.tournamentWindow{
+  position: absolute;
+  top: 19px;
+  left: 0px;
+  width: 44px;
+  text-align: center;
+  background-color: #EEE;
+  border: 1px solid #000;
+  padding: 2px 5px;
+  z-index: 5;
+}
+
+/*druzyny kulki*/
+
+.flags{
+  position: relative;
+  top: 100px;
+}
+
+.ball{
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px #2E2E2E;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.ball:hover{
+  border: solid 2px #404040;
+}
+
+@media (max-width: 480px){
+  nav ul li a span{
+    display: none;
+  }
+  
+nav ul li .fa{
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  nav ul li a i{
+  	display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .teams{
+    width: 100%;
+  }
+}
+
+.polandFlag{
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/archive/1/12/20111003025458!Flag_of_Poland.svg');
+}
+
+.brazilFlag{
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png');
+}
+
+.russiaFlag{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Russia_%281991-1993%29.svg/2000px-Flag_of_Russia_%281991-1993%29.svg.png');
+}
+
+.germanyFlag{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Flag_of_Germany_%283-2_aspect_ratio%29.svg/2000px-Flag_of_Germany_%283-2_aspect_ratio%29.svg.png');
+}
+
+.italyFlag{
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg');
+}
+
+.franceFlag{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Civil_and_Naval_Ensign_of_France.svg/2000px-Civil_and_Naval_Ensign_of_France.svg.png');
+}
