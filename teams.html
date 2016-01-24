@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Drużyny</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="script.js"></script>
+</head>
+	<body>
+		<nav>
+	  <ul>
+	    <li><a href="#"><i class="fa fa-home"></i></a></li>
+	    <li><a href="#"><i class="fa fa-users"></i><span> Drużyny</span></a></li>
+	    <li><a href="#"><i class="fa fa-user"></i><span> Gracze</span></a></li>
+	    <li><a href="#"><i class="fa fa-trophy"></i><span> Turnieje</span></a></li>
+	    <li><a href="#"><i class="fa fa-child"></i><span> O mnie</span></a></li>
+	  </ul>
+	</nav>
+
+	<div class="teams">
+	  <ul>
+	    <li class="polandTeam"><a onclick="toggle('polStats')">Polska</a><a href="#2"></a></li>
+	    <li class="stats polStats">
+	    	<div class="window">
+	    		<div class="triangleBorder">
+	    			<div class="triangle"></div>
+	    		</div>
+			  	<span class="tournamentTitle">Turnieje:</span>
+			  	<div class="tournaments">
+			  		<div class="tournament">Igrzyska Olimpijskie: </div>
+				  	<span onmouseenter="enter('goldIoPol')" onmouseleave="leave('goldIoPol')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 1 <div class="goldIoPol tournamentWindow"> 1976 </div></span>
+				  	<span onmouseenter="enter('silverIoPol')" onmouseleave="leave('silverIoPol')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 0 <div class="silverIoPol tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('bronzeIoPol')" onmouseleave="leave('bronzeIoPol')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeIoPol tournamentWindow"> - </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Świata: </div>
+				  	<span onmouseenter="enter('goldWcPol')" onmouseleave="leave('goldWcPol')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 2 <div class="goldWcPol tournamentWindow"> 1974 2014 </div></span>
+				  	<span onmouseenter="enter('silverWcPol')" onmouseleave="leave('silverWcPol')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 1 <div class="silverWcPol tournamentWindow"> 2006 </div></span>
+				  	<span onmouseenter="enter('bronzeWcPol')" onmouseleave="leave('bronzeWcPol')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeWcPol tournamentWindow"> - </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Eurpoy: </div>
+				  	<span onmouseenter="enter('goldEcPol')" onmouseleave="leave('goldEcPol')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 1 <div class="goldEcPol tournamentWindow"> 2009 </div></span>
+				  	<span onmouseenter="enter('silverEcPol')" onmouseleave="leave('silverEcPol')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 5 <div class="silverEcPol tournamentWindow"> 1975 1977 1979 1981 1983 </div></span>
+				  	<span onmouseenter="enter('bronzeEcPol')" onmouseleave="leave('bronzeEcPol')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 2 <div class="bronzeEcPol tournamentWindow"> 1976 2011 </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Liga Światowa: </div>
+				  	<span onmouseenter="enter('goldWlPol')" onmouseleave="leave('goldWlPol')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 1 <div class="goldWlPol tournamentWindow"> 2012 </div></span>
+				  	<span onmouseenter="enter('silverWlPol')" onmouseleave="leave('silverWlPol')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 0 <div class="silverWlPol tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('bronzeWlPol')" onmouseleave="leave('bronzeWlPol')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 1 <div class="bronzeWlPol tournamentWindow"> 2011 </div></span>
+				</div>
+			</div>
+	    </li>
+	    <li class="brazilTeam"><a onclick="toggle('braStats')">Brazylia</a><a href="#2"></a></li>
+	    <li class="stats braStats">
+	    	<div class="window">
+	    		<div class="triangleBorder">
+	    			<div class="triangle"></div>
+	    		</div>
+			  	<span class="tournamentTitle">Turnieje:</span>
+			  	<div class="tournaments">
+			  		<div class="tournament">Igrzyska Olimpijskie: </div>
+				  	<span onmouseenter="enter('goldIoBra')" onmouseleave="leave('goldIoBra')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 2 <div class="goldIoBra tournamentWindow"> 1992 2004 </div></span>
+				  	<span onmouseenter="enter('silverIoBra')" onmouseleave="leave('silverIoBra')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 3 <div class="silverIoBra tournamentWindow"> 1984 2008 2012 </div></span>
+				  	<span onmouseenter="enter('bronzeIoBra')" onmouseleave="leave('bronzeIoBra')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeIoBra tournamentWindow"> - </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Świata: </div>
+				  	<span onmouseenter="enter('goldWcBra')" onmouseleave="leave('goldWcBra')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 3 <div class="goldWcBra tournamentWindow"> 2002 2006 2010 </div></span>
+				  	<span onmouseenter="enter('silverWcBra')" onmouseleave="leave('silverWcBra')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 2 <div class="silverWcBra tournamentWindow"> 1982 2014 </div></span>
+				  	<span onmouseenter="enter('bronzeWcBra')" onmouseleave="leave('bronzeWcBra')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeWcBra tournamentWindow"> - </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Liga Światowa: </div>
+				  	<span onmouseenter="enter('goldWlBra')" onmouseleave="leave('goldWlBra')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 9 <div class="goldWlBra tournamentWindow"> 1993 2001 2003 2004 2005 2006 2007 2009 2010 </div></span>
+				  	<span onmouseenter="enter('silverWlBra')" onmouseleave="leave('silverWlBra')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 4 <div class="silverWlBra tournamentWindow"> 1995 2002 2011 2013 </div></span>
+				  	<span onmouseenter="enter('bronzeWlBra')" onmouseleave="leave('bronzeWlBra')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 4 <div class="bronzeWlBra tournamentWindow"> 1990 1994 1999 2000 </div></span>
+				</div>
+			</div>
+	    </li>
+	    <li class="russiaTeam"><a onclick="toggle('rusStats')">Rosja</a><a href="#2"></a></li>
+	    <li class="stats rusStats">
+	    	<div class="window">
+	    		<div class="triangleBorder">
+	    			<div class="triangle"></div>
+	    		</div>
+			  	<span class="tournamentTitle">Turnieje:</span>
+			  	<div class="tournaments">
+			  		<div class="tournament">Igrzyska Olimpijskie: </div>
+				  	<span onmouseenter="enter('goldIoRus')" onmouseleave="leave('goldIoRus')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 1 <div class="goldIoRus tournamentWindow"> 2012 </div></span>
+				  	<span onmouseenter="enter('silverIoRus')" onmouseleave="leave('silverIoRus')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 1 <div class="silverIoRus tournamentWindow"> 2000 </div></span>
+				  	<span onmouseenter="enter('bronzeIoRus')" onmouseleave="leave('bronzeIoRus')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 2 <div class="bronzeIoRus tournamentWindow"> 2004 2008 </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Świata: </div>
+				  	<span onmouseenter="enter('goldWcRus')" onmouseleave="leave('goldWcRus')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 0 <div class="goldWcRus tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('silverWcRus')" onmouseleave="leave('silverWcRus')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 1 <div class="silverWcRus tournamentWindow"> 2002 </div></span>
+				  	<span onmouseenter="enter('bronzeWcRus')" onmouseleave="leave('bronzeWcRus')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeWcRus tournamentWindow"> - </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Eurpoy: </div>
+				  	<span onmouseenter="enter('goldEcRus')" onmouseleave="leave('goldEcRus')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 1 <div class="goldEcRus tournamentWindow"> 2013 </div></span>
+				  	<span onmouseenter="enter('silverEcRus')" onmouseleave="leave('silverEcRus')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 3 <div class="silverEcRus tournamentWindow"> 1999 2005 2007 </div></span>
+				  	<span onmouseenter="enter('bronzeEcRus')" onmouseleave="leave('bronzeEcRus')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 3 <div class="bronzeEcRus tournamentWindow"> 1993 2001 2003 </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Liga Światowa: </div>
+				  	<span onmouseenter="enter('goldWlRus')" onmouseleave="leave('goldWlRus')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 3 <div class="goldWlRus tournamentWindow"> 2002 2011 2013 </div></span>
+				  	<span onmouseenter="enter('silverWlRus')" onmouseleave="leave('silverWlRus')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 5 <div class="silverWlRus tournamentWindow"> 1993 1998 2000 2007 2010 </div></span>
+				  	<span onmouseenter="enter('bronzeWlRus')" onmouseleave="leave('bronzeWlRus')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 6 <div class="bronzeWlRus tournamentWindow"> 1996 1997 2001 2006 2008 2009 </div></span>
+				</div>
+			</div>
+	    </li>
+	    <li class="germanyTeam"><a onclick="toggle('gerStats')">Niemcy</a><a href="#2"></a></li>
+	    <li class="stats gerStats">
+	    	<div class="window">
+	    		<div class="triangleBorder">
+	    			<div class="triangle"></div>
+	    		</div>
+			  	<span class="tournamentTitle">Turnieje:</span>
+			  	<div class="tournaments">
+			  		<div class="tournament">Igrzyska Olimpijskie: </div>
+				  	<span onmouseenter="enter('goldIoGer')" onmouseleave="leave('goldIoGer')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 0 <div class="goldIoGer tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('silverIoGer')" onmouseleave="leave('silverIoGer')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 0 <div class="silverIoGer tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('bronzeIoGer')" onmouseleave="leave('bronzeIoGer')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 1 <div class="bronzeIoGer tournamentWindow"> 2014 </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Świata: </div>
+				  	<span onmouseenter="enter('goldWcGer')" onmouseleave="leave('goldWcGer')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 0 <div class="goldWcGer tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('silverWcGer')" onmouseleave="leave('silverWcGer')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 0 <div class="silverWcGer tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('bronzeWcGer')" onmouseleave="leave('bronzeWcGer')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeWcGer tournamentWindow"> - </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Eurpoy: </div>
+				  	<span onmouseenter="enter('goldEcGer')" onmouseleave="leave('goldEcGer')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 0 <div class="goldEcGer tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('silverEcGer')" onmouseleave="leave('silverEcGer')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 0 <div class="silverEcGer tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('bronzeEcGer')" onmouseleave="leave('bronzeEcGer')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeEcGer tournamentWindow"> - </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Liga Światowa: </div>
+				  	<span onmouseenter="enter('goldWlGer')" onmouseleave="leave('goldWlGer')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 0 <div class="goldWlGer tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('silverWlGer')" onmouseleave="leave('silverWlGer')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 0 <div class="silverWlGer tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('bronzeWlGer')" onmouseleave="leave('bronzeWlGer')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeWlGer tournamentWindow"> - </div></span>
+				</div>
+			</div>
+	    </li>
+	    <li class="italyTeam"><a onclick="toggle('itStats')">Włochy</a><a href="#2"></a></li>
+	    <li class="stats itStats">
+	    	<div class="window">
+	    		<div class="triangleBorder">
+	    			<div class="triangle"></div>
+	    		</div>
+			  	<span class="tournamentTitle">Turnieje:</span>
+			  	<div class="tournaments">
+			  		<div class="tournament">Igrzyska Olimpijskie: </div>
+				  	<span onmouseenter="enter('goldIoIt')" onmouseleave="leave('goldIoIt')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 0 <div class="goldIoIt tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('silverIoIt')" onmouseleave="leave('silverIoIt')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 2 <div class="silverIoIt tournamentWindow"> 1996 2004 </div></span>
+				  	<span onmouseenter="enter('bronzeIoIt')" onmouseleave="leave('bronzeIoIt')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 3 <div class="bronzeIoIt tournamentWindow"> 1984 2000 2012 </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Świata: </div>
+				  	<span onmouseenter="enter('goldWcIt')" onmouseleave="leave('goldWcIt')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 3 <div class="goldWcIt tournamentWindow"> 1990 1994 1998 </div></span>
+				  	<span onmouseenter="enter('silverWcIt')" onmouseleave="leave('silverWcIt')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 1 <div class="silverWcIt tournamentWindow"> 1978 </div></span>
+				  	<span onmouseenter="enter('bronzeWcIt')" onmouseleave="leave('bronzeWcIt')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeWcIt tournamentWindow"> - </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Eurpoy: </div>
+				  	<span onmouseenter="enter('goldEcIt')" onmouseleave="leave('goldEcIt')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 6 <div class="goldEcIt tournamentWindow"> 1989 1997 1995 1999 2003 2005 </div></span>
+				  	<span onmouseenter="enter('silverEcIt')" onmouseleave="leave('silverEcIt')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 4 <div class="silverEcIt tournamentWindow"> 1991 2001 2011 2013 </div></span>
+				  	<span onmouseenter="enter('bronzeEcIt')" onmouseleave="leave('bronzeEcIt')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 2 <div class="bronzeEcIt tournamentWindow"> 1948 1997 </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Liga Światowa: </div>
+				  	<span onmouseenter="enter('goldWlIt')" onmouseleave="leave('goldWlIt')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 8 <div class="goldWlIt tournamentWindow"> 1990 1991 1992 1994 1995 1997 1999 2000 </div></span>
+				  	<span onmouseenter="enter('silverWlIt')" onmouseleave="leave('silverWlIt')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 3 <div class="silverWlIt tournamentWindow"> 1996 2001 2004 </div></span>
+				  	<span onmouseenter="enter('bronzeWlIt')" onmouseleave="leave('bronzeWlIt')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 4 <div class="bronzeWlIt tournamentWindow"> 1993 2003 2013 2014 </div></span>
+				</div>
+			</div>
+	    </li>
+	    <li class="franceTeam"><a onclick="toggle('fraStats')">Francja</a><a href="#2"></a></li>
+	    <li class="stats fraStats">
+	    	<div class="window">
+	    		<div class="triangleBorder">
+	    			<div class="triangle"></div>
+	    		</div>
+			  	<span class="tournamentTitle">Turnieje:</span>
+			  	<div class="tournaments">
+			  		<div class="tournament">Igrzyska Olimpijskie: </div>
+				  	<span onmouseenter="enter('goldIoFra')" onmouseleave="leave('goldIoFra')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 0 <div class="goldIoFra tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('silverIoFra')" onmouseleave="leave('silverIoFra')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 0 <div class="silverIoFra tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('bronzeIoFra')" onmouseleave="leave('bronzeIoFra')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeIoFra tournamentWindow"> - </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Świata: </div>
+				  	<span onmouseenter="enter('goldWcFra')" onmouseleave="leave('goldWcFra')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 0 <div class="goldWcFra tournamentWindow"> - </div></span>
+				  	<span onmouseenter="enter('silverWcFra')" onmouseleave="leave('silverWcFra')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 1 <div class="silverWcFra tournamentWindow"> 2002 </div></span>
+				  	<span onmouseenter="enter('bronzeWcFra')" onmouseleave="leave('bronzeWcFra')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeWcFra tournamentWindow"> - </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Mistrzostwa Eurpoy: </div>
+				  	<span onmouseenter="enter('goldEcFra')" onmouseleave="leave('goldEcFra')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 1 <div class="goldEcFra tournamentWindow"> 2015 </div></span>
+				  	<span onmouseenter="enter('silverEcFra')" onmouseleave="leave('silverEcFra')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 4 <div class="silverEcFra tournamentWindow"> 1948 1987 2003 2009 </div></span>
+				  	<span onmouseenter="enter('bronzeEcFra')" onmouseleave="leave('bronzeEcFra')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 2 <div class="bronzeEcFra tournamentWindow"> 1951 1985 </div></span>
+				</div>
+				<div class="tournaments">
+			  		<div class="tournament">Liga Światowa: </div>
+				  	<span onmouseenter="enter('goldWlFra')" onmouseleave="leave('goldWlFra')" class="tournamentTitle"><i class="fa fa-trophy gold"></i>: 1 <div class="goldWlFra tournamentWindow"> 2015 </div></span>
+				  	<span onmouseenter="enter('silverWlFra')" onmouseleave="leave('silverWlFra')" class="tournamentTitle"><i class="fa fa-trophy silver"></i>: 1 <div class="silverWlFra tournamentWindow"> 2006 </div></span>
+				  	<span onmouseenter="enter('bronzeWlFra')" onmouseleave="leave('bronzeWlFra')" class="tournamentTitle"><i class="fa fa-trophy bronze"></i>: 0 <div class="bronzeWlFra tournamentWindow"> - </div></span>
+				</div>
+			</div>
+	    </li>
+	  </ul>
+	</div>
+
+	<div class="flags">
+	  <div class="ball polandFlag"></div>
+	  <div class="ball brazilFlag"></div>
+	  <div class="ball russiaFlag"></div>
+	  <div class="ball germanyFlag"></div>
+	  <div class="ball italyFlag"></div>
+	  <div class="ball franceFlag"></div>
+	</div>
+</body>
+</html>
