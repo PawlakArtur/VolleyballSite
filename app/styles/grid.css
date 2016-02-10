@@ -1,0 +1,98 @@
+.row{
+	font-size: 0px;
+	margin: 20px 0;
+}
+
+.row .column:last-child{
+	margin: 0;
+}
+
+.column{
+	font-size: 15px;
+	display: inline-block;
+	margin: 0 2% 0 0;
+	padding: 10px;
+	background-color: #CDCDCD;
+	vertical-align: top;
+	text-align: justify;
+	border: solid 1px blue;
+}
+
+.box1{
+	width: 100%;
+}
+
+.box2{
+	width: 49%;
+}
+
+.box3{
+	width: 32%;
+}
+
+.box4{
+	width: 23.5%;
+}
+
+.box5{
+	width: 18.4%;
+}
+
+.box6{
+	width: 15%
+}
+
+.box7{
+	width: 12.571%;
+}
+
+.box8{
+	width: 10.75%;
+}
+
+.box9{
+	width: 9.333%;
+}
+
+.box10{
+	width: 8.2%;
+}
+
+@media screen and (max-width: 480px){
+	.row .column{
+		border: solid 1px red;
+		transition: 0.8s;
+	}
+
+	.row .box6, .row .box7, .row .box8, .row .box9, .row .box10{
+		width: 100%;
+		margin: 0 0 20px;
+	}
+}
+	
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+	.row .column{
+		border: solid 1px green;
+		transition: 0.8s;
+	}
+
+	.row .box8, .row .box9, .row .box10{
+		width: 100%;
+		margin: 0 0 20px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px){
+	.row .column{
+		border: solid 1px gold;
+		transition: 0.8s;
+	}
+}
+
+@media screen and (min-width: 981px){
+	.row .column{
+		border: solid 1px pink;
+		transition: 0.8s;
+	}
+}

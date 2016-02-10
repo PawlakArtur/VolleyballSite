@@ -1,0 +1,102 @@
+{
+	"team": [
+	{
+		"name": "Polska",
+		"short": "Pol",
+		"tournaments": [
+			{
+				"name": "Igrzyska Olimpijskie",
+				"short": "Io",
+				"gold": [1976],
+				"silver": [],
+				"bronze": []
+			},
+			{
+				"name": "Mistrzostwa Świata",
+				"short": "WC",
+				"gold": [1974, 2014],
+				"silver": [2006],
+				"bronze": []
+			},
+			{
+				"name": "Mistrzostwa Europy",
+				"short": "Ec",
+				"gold": [2009],
+				"silver": [1975, 1977, 1979],
+				"bronze": [1976, 2011]
+			},
+			{
+				"name": "Liga Światowa",
+				"short": "Lc",
+				"gold": [2012],
+				"silver": [],
+				"bronze": [2011]
+		}]
+	},
+	{
+		"name": "Brazylia",
+		"short": "Bra",
+		"tournaments": [
+			{
+				"name": "Igrzyska Olimpijskie",
+				"short": "Io",
+				"gold": [1992, 2004],
+				"silver": [1984, 2008, 2012],
+				"bronze": []
+			},
+			{
+				"name": "Mistrzostwa Świata",
+				"short": "WC",
+				"gold": [2002, 2006, 2010],
+				"silver": [1982, 2014],
+				"bronze": []
+			},
+			{
+				"name": "Mistrzostwa Europy",
+				"short": "Ec",
+				"gold": [],
+				"silver": [],
+				"bronze": []
+			},
+			{
+				"name": "Liga Światowa",
+				"short": "Lc",
+				"gold": [1993, 2001, 2003, 2004, 2005, 2006, 2007, 2009, 2010],
+				"silver": [1995, 2002, 2011, 2013],
+				"bronze": [1990, 1994, 1999, 2000]
+		}]
+	},
+	{
+		"name": "Rosja",
+		"short": "Rus",
+		"tournaments": [
+			{
+				"name": "Igrzyska Olimpijskie",
+				"short": "Io",
+				"gold": [2012],
+				"silver": [2000],
+				"bronze": [2004, 2008]
+			},
+			{
+				"name": "Mistrzostwa Świata",
+				"short": "WC",
+				"gold": [],
+				"silver": [2002],
+				"bronze": []
+			},
+			{
+				"name": "Mistrzostwa Europy",
+				"short": "Ec",
+				"gold": [2013],
+				"silver": [1999, 2005, 2007],
+				"bronze": [1993, 2001, 2003]
+			},
+			{
+				"name": "Liga Światowa",
+				"short": "Lc",
+				"gold": [2002, 2011, 2013],
+				"silver": [1993, 1998, 2000, 2007, 2010],
+				"bronze": [1996, 1997, 2001, 2006, 2008, 2009]
+		}]
+	}]
+}

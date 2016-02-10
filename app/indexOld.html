@@ -3,24 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Drużyny</title>
-	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<script src="script.js"></script>
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="scripts/mainScript.js"></script>
 </head>
 	<body>
 		<nav>
-	  <ul>
-	    <li><a href="#"><i class="fa fa-home"></i></a></li>
-	    <li><a href="#"><i class="fa fa-users"></i><span> Drużyny</span></a></li>
-	    <li><a href="#"><i class="fa fa-user"></i><span> Gracze</span></a></li>
-	    <li><a href="#"><i class="fa fa-trophy"></i><span> Turnieje</span></a></li>
-	    <li><a href="#"><i class="fa fa-child"></i><span> O mnie</span></a></li>
-	  </ul>
+		  <ul>
+		    <li><a href="#"><i class="fa fa-home"></i></a></li>
+		    <li><a href="#"><i class="fa fa-users"></i><span> Drużyny</span></a></li>
+		    <li><a href="#"><i class="fa fa-user"></i><span> Gracze</span></a></li>
+		    <li><a href="#"><i class="fa fa-trophy"></i><span> Turnieje</span></a></li>
+		    <li><a href="#"><i class="fa fa-child"></i><span> O mnie</span></a></li>
+		  </ul>
 	</nav>
-
 	<div class="teams">
 	  <ul>
-	    <li class="polandTeam"><a onclick="toggle('polStats')">Polska</a><a href="#2"></a></li>
+	    <li class="polandTeam"><a onclick="toggle('polStats')">Polska</a><a onclick="checkCountry('Polska')" href="team2.html"></a></li>
 	    <li class="stats polStats">
 	    	<div class="window">
 	    		<div class="triangleBorder">
@@ -53,7 +52,7 @@
 				</div>
 			</div>
 	    </li>
-	    <li class="brazilTeam"><a onclick="toggle('braStats')">Brazylia</a><a href="#2"></a></li>
+	    <li class="brazilTeam"><a onclick="toggle('braStats')">Brazylia</a><a onclick="checkCountry('Brazylia')" href="team2.html"></a></li>
 	    <li class="stats braStats">
 	    	<div class="window">
 	    		<div class="triangleBorder">

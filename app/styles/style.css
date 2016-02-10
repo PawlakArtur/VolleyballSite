@@ -132,16 +132,24 @@ nav ul li .fa-home{
   color: #915500;
 }
 
-.polStats, .braStats, .rusStats, .gerStats, .itStats, .fraStats{
+/*.polStats, .braStats, .rusStats, .gerStats, .itStats, .fraStats{
   display: none;
-}
+}*/
 
 .stats{
-	display: none;
+  display: inline-block;
 	width: 100%;
 	background-color: #EEE;
 	margin: 0;
 	padding: 15px 15px 5px 5px;
+}
+
+.statsHide{
+  display: none;
+}
+
+.statsShow{
+  display: inline-block;
 }
 
 .window{
@@ -186,8 +194,16 @@ nav ul li .fa-home{
 .tournamentTitle{
   color: #404040;
   position: relative;
+  display: inline-block;
+  width: 37px;
 }
 
+.tournamentTitleFirst{
+  color: #404040;
+  position: relative;
+  display: inline-block;
+}
+/*
 .goldIoPol, .silverIoPol, .bronzeIoPol, .goldWcPol, .silverWcPol, .bronzeWcPol, .goldEcPol, .silverEcPol, .bronzeEcPol, .goldWlPol, .silverWlPol, .bronzeWlPol{
   display: none;  
 }
@@ -210,7 +226,7 @@ nav ul li .fa-home{
 
 .goldIoFra, .silverIoFra, .bronzeIoFra, .goldWcFra, .silverWcFra, .bronzeWcFra, .goldEcFra, .silverEcFra, .bronzeEcFra, .goldWlFra, .silverWlFra, .bronzeWlFra{
   display: none;  
-}
+}*/
 
 .tournamentWindow{
   position: absolute;
@@ -265,6 +281,69 @@ nav ul li .fa{
     width: 100%;
   }
 }
+
+/********************************** Team ************************************/
+
+#team{
+  position: relative;
+  top: 60px;
+  margin: 0 auto 0;
+  width: 80%;
+  border: 1px solid #CCC;
+  background-color: #EEE;
+}
+
+#team h3{
+  margin: 0;
+  text-align: center;
+}
+
+#team ul{
+  margin: 0;
+  list-style-type: none;
+}
+
+.detailHide{
+  display: none;
+}
+
+.detailShow{
+  display: inline-block;
+}
+
+H3{
+  font-size: 1.7em;
+}
+
+#team .people{
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#team .people .peopleLi:first-child{
+  border-bottom: 1px solid #CCC;
+}
+
+#coach, #player{
+  padding: 5px 0 5px 10px;
+}
+
+.detail{
+  padding: 15px 0 10px 10px;
+  border-bottom: 1px solid #CCC;
+}
+
+.detail:last-child{
+  border-bottom: none;
+}
+
+.spanDetails{
+  display: block;
+}
+
+
+/********************************** /Team ***********************************/
 
 .polandFlag{
   background-image: url('https://upload.wikimedia.org/wikipedia/en/archive/1/12/20111003025458!Flag_of_Poland.svg');

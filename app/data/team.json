@@ -1,0 +1,55 @@
+{
+	"team": [{
+		"name": "Polska",
+		"coach": [{
+			"firstName": "Stéphane",
+			"lastName": "Antiga",
+			"birth": "3 lutego 1976"
+		}, {
+			"firstName": "Philippe",
+			"lastName": "Blain",
+			"birth": "20 maja 1960"
+		}],
+		"player": [{
+			"firstName": "Wojciech",
+			"lastName": "Żaliński",
+			"birth": "8 stycznia 1988",
+			"number": 1,
+			"position": "przyjmujący",
+			"height": "195"
+		}, {
+			"firstName": "Dawid",
+			"lastName": "Konarski",
+			"birth": "31 sierpnia 1989",
+			"number": 5,
+			"position": "atakujący",
+			"height": "198"
+		}]
+	}, {
+		"name": "Brazylia",
+		"coach": [{
+			"firstName": "asd",
+			"lastName": "Antiga",
+			"birth": "3 lutego 1976"
+		}, {
+			"firstName": "Philippe",
+			"lastName": "Blain",
+			"birth": "20 maja 1960"
+		}],
+		"player": [{
+			"firstName": "Wojciech",
+			"lastName": "Żaliński",
+			"birth": "8 stycznia 1988",
+			"number": 1,
+			"position": "przyjmujący",
+			"height": "195"
+		}, {
+			"firstName": "Dawid",
+			"lastName": "Konarski",
+			"birth": "31 sierpnia 1989",
+			"number": 5,
+			"position": "atakujący",
+			"height": 198
+		}]
+	}]
+}
