@@ -12,17 +12,15 @@ nav{
   left: 0;
   z-index: 10;
   background-color: #fff;
+  border:1px solid #CCC;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
 nav ul{
   list-style-type:none;
-  margin:10px 0 0;
+  margin: 10px auto 0;
   padding:0;
-  
-  border:1px solid #CCC;
-  width: 100%;
-  
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+  width: 80%;
 }
 
 nav ul li{
@@ -132,16 +130,12 @@ nav ul li .fa-home{
   color: #915500;
 }
 
-/*.polStats, .braStats, .rusStats, .gerStats, .itStats, .fraStats{
-  display: none;
-}*/
-
 .stats{
   display: inline-block;
-	width: 100%;
-	background-color: #EEE;
-	margin: 0;
-	padding: 15px 15px 5px 5px;
+  width: 100%;
+  background-color: #EEE;
+  margin: 0;
+  padding: 15px 15px 5px 5px;
 }
 
 .statsHide{
@@ -154,12 +148,12 @@ nav ul li .fa-home{
 
 .window{
   position: relative;
-	display: inline-block;
-	width: 50%;
-	margin: 0;
-	padding: 5px 15px;
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  padding: 5px 15px;
   border: 1px solid #CCC;
-	background-color: #F7F7F7;
+  background-color: #F7F7F7;
 }
 
 .triangleBorder{
@@ -203,30 +197,6 @@ nav ul li .fa-home{
   position: relative;
   display: inline-block;
 }
-/*
-.goldIoPol, .silverIoPol, .bronzeIoPol, .goldWcPol, .silverWcPol, .bronzeWcPol, .goldEcPol, .silverEcPol, .bronzeEcPol, .goldWlPol, .silverWlPol, .bronzeWlPol{
-  display: none;  
-}
-
-.goldIoBra, .silverIoBra, .bronzeIoBra, .goldWcBra, .silverWcBra, .bronzeWcBra, .goldWlBra, .silverWlBra, .bronzeWlBra{
-  display: none;  
-}
-
-.goldIoRus, .silverIoRus, .bronzeIoRus, .goldWcRus, .silverWcRus, .bronzeWcRus, .goldEcRus, .silverEcRus, .bronzeEcRus, .goldWlRus, .silverWlRus, .bronzeWlRus{
-  display: none;  
-}
-
-.goldIoGer, .silverIoGer, .bronzeIoGer, .goldWcGer, .silverWcGer, .bronzeWcGer, .goldEcGer, .silverEcGer, .bronzeEcGer, .goldWlGer, .silverWlGer, .bronzeWlGer{
-  display: none;  
-}
-
-.goldIoIt, .silverIoIt, .bronzeIoIt, .goldWcIt, .silverWcIt, .bronzeWcIt, .goldEcIt, .silverEcIt, .bronzeEcIt, .goldWlIt, .silverWlIt, .bronzeWlIt{
-  display: none;  
-}
-
-.goldIoFra, .silverIoFra, .bronzeIoFra, .goldWcFra, .silverWcFra, .bronzeWcFra, .goldEcFra, .silverEcFra, .bronzeEcFra, .goldWlFra, .silverWlFra, .bronzeWlFra{
-  display: none;  
-}*/
 
 .tournamentWindow{
   position: absolute;
@@ -235,51 +205,10 @@ nav ul li .fa-home{
   width: 44px;
   text-align: center;
   background-color: #EEE;
-  border: 1px solid #000;
+  border: 1px solid #A1A1A1;
+  border-radius: 3px;
   padding: 2px 5px;
   z-index: 5;
-}
-
-/*druzyny kulki*/
-
-.flags{
-  position: relative;
-  top: 100px;
-}
-
-.ball{
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: solid 2px #2E2E2E;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-.ball:hover{
-  border: solid 2px #404040;
-}
-
-@media (max-width: 480px){
-  nav ul li a span{
-    display: none;
-  }
-  
-nav ul li .fa{
-    display: inline-block;
-    margin: 0 5px;
-  }
-
-  nav ul li a i{
-  	display: inline-block;
-    margin: 0 5px;
-  }
-  
-  .teams{
-    width: 100%;
-  }
 }
 
 /********************************** Team ************************************/
@@ -303,14 +232,6 @@ nav ul li .fa{
   list-style-type: none;
 }
 
-.detailHide{
-  display: none;
-}
-
-.detailShow{
-  display: inline-block;
-}
-
 H3{
   font-size: 1.7em;
 }
@@ -332,6 +253,7 @@ H3{
 .detail{
   padding: 15px 0 10px 10px;
   border-bottom: 1px solid #CCC;
+  width: 50%;
 }
 
 .detail:last-child{
@@ -344,6 +266,28 @@ H3{
 
 
 /********************************** /Team ***********************************/
+
+/*druzyny kulki*/
+
+.flags{
+  position: relative;
+  top: 100px;
+}
+
+.ball{
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px #2E2E2E;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.ball:hover{
+  border: solid 2px #404040;
+}
 
 .polandFlag{
   background-image: url('https://upload.wikimedia.org/wikipedia/en/archive/1/12/20111003025458!Flag_of_Poland.svg');
@@ -367,4 +311,24 @@ H3{
 
 .franceFlag{
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Civil_and_Naval_Ensign_of_France.svg/2000px-Civil_and_Naval_Ensign_of_France.svg.png');
+}
+
+@media (max-width: 480px){
+  nav ul li a span{
+    display: none;
+  }
+  
+nav ul li .fa{
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  nav ul li a i{
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .teams{
+    width: 100%;
+  }
 }

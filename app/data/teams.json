@@ -52,13 +52,6 @@
 				"bronze": []
 			},
 			{
-				"name": "Mistrzostwa Europy",
-				"short": "Ec",
-				"gold": [],
-				"silver": [],
-				"bronze": []
-			},
-			{
 				"name": "Liga Światowa",
 				"short": "Lc",
 				"gold": [1993, 2001, 2003, 2004, 2005, 2006, 2007, 2009, 2010],
@@ -97,6 +90,105 @@
 				"gold": [2002, 2011, 2013],
 				"silver": [1993, 1998, 2000, 2007, 2010],
 				"bronze": [1996, 1997, 2001, 2006, 2008, 2009]
+		}]
+	},
+	{
+		"name": "Niemcy",
+		"short": "Ger",
+		"tournaments": [
+			{
+				"name": "Igrzyska Olimpijskie",
+				"short": "Io",
+				"gold": [],
+				"silver": [],
+				"bronze": []
+			},
+			{
+				"name": "Mistrzostwa Świata",
+				"short": "WC",
+				"gold": [],
+				"silver": [],
+				"bronze": [2014]
+			},
+			{
+				"name": "Mistrzostwa Europy",
+				"short": "Ec",
+				"gold": [],
+				"silver": [],
+				"bronze": []
+			},
+			{
+				"name": "Liga Światowa",
+				"short": "Lc",
+				"gold": [],
+				"silver": [],
+				"bronze": []
+		}]
+	},
+	{
+		"name": "Włochy",
+		"short": "Ita",
+		"tournaments": [
+			{
+				"name": "Igrzyska Olimpijskie",
+				"short": "Io",
+				"gold": [],
+				"silver": [1996, 2004],
+				"bronze": [1984, 2000, 2012]
+			},
+			{
+				"name": "Mistrzostwa Świata",
+				"short": "WC",
+				"gold": [1990, 1994, 1998],
+				"silver": [1978],
+				"bronze": []
+			},
+			{
+				"name": "Mistrzostwa Europy",
+				"short": "Ec",
+				"gold": [1989, 1993, 1995, 1999, 2003, 2005],
+				"silver": [1991, 2001, 2011, 2013],
+				"bronze": [1948, 1997]
+			},
+			{
+				"name": "Liga Światowa",
+				"short": "Lc",
+				"gold": [1990, 1991, 1992, 1994, 1995, 1997, 1999, 2000],
+				"silver": [1996, 2001, 2004],
+				"bronze": [1993, 2003, 2013, 2014]
+		}]
+	},
+	{
+		"name": "Francja",
+		"short": "Fra",
+		"tournaments": [
+			{
+				"name": "Igrzyska Olimpijskie",
+				"short": "Io",
+				"gold": [],
+				"silver": [],
+				"bronze": []
+			},
+			{
+				"name": "Mistrzostwa Świata",
+				"short": "WC",
+				"gold": [],
+				"silver": [],
+				"bronze": [2002]
+			},
+			{
+				"name": "Mistrzostwa Europy",
+				"short": "Ec",
+				"gold": [2015],
+				"silver": [1948, 1987, 2003, 2009],
+				"bronze": [1951, 1985]
+			},
+			{
+				"name": "Liga Światowa",
+				"short": "Lc",
+				"gold": [2015],
+				"silver": [2006],
+				"bronze": []
 		}]
 	}]
 }

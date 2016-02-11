@@ -9,6 +9,7 @@ xmlhttp.onreadystatechange = function() {
         addCountry(myArr, country);
         addCoach(myArr, country);
         addPlayer(myArr, country);
+        addEventsDetails(myArr, country);
     }
 };
 xmlhttp.open("GET", url, true);
@@ -44,22 +45,24 @@ function addWindow(parent, childrens){
 function addCoach(arr, country) {
     [].forEach.call(arr.team, function(myArr){
         if(myArr.name === country){
-            [].forEach.call(myArr.coach, function(myArr2){
+            [].forEach.call(myArr.coach, function(myArrCoach){
                 var coachTag = document.getElementById("coach");
                 var coachLiName = document.createElement("li");
                 coachLiName.setAttribute("class", "name");
+                coachLiName.setAttribute("id", "nameId" + myArrCoach.id);
                 coachTag.appendChild(coachLiName);
                 var coachSpan = document.createElement("span");
                 coachTag.appendChild(coachSpan);
-                coachSpan.innerHTML = myArr2.firstName + " " + myArr2.lastName;
+                coachSpan.innerHTML = myArrCoach.firstName + " " + myArrCoach.lastName;
                 coachLiName.appendChild(coachSpan);
                 var coachLiDetail = document.createElement("li");
-                coachLiDetail.setAttribute("class", "detail");
+                coachLiDetail.setAttribute("class", "detail statsHide");
+                coachLiDetail.setAttribute("id", "detailId" + myArrCoach.id);
                 coachTag.appendChild(coachLiDetail);
 
                 var coachSpanBirth = document.createElement("span");
                 coachSpanBirth.setAttribute("class", "spanDetails");
-                coachSpanBirth.innerHTML = "Data urodzenia: " + myArr2.birth;
+                coachSpanBirth.innerHTML = "Data urodzenia: " + myArrCoach.birth;
 
                 var childrens = [];
                 childrens.push(coachSpanBirth);
@@ -73,35 +76,36 @@ function addCoach(arr, country) {
 function addPlayer(arr, country) {
     [].forEach.call(arr.team, function(myArr){
         if(myArr.name === country){
-            [].forEach.call(myArr.player, function(myArr2){
+            [].forEach.call(myArr.player, function(myArrPlayer){
                 var playerTag = document.getElementById("player");
                 var playerLiName = document.createElement("li");
                 playerLiName.setAttribute("class", "name");
+                playerLiName.setAttribute("id", "nameId" + myArrPlayer.id);
                 playerTag.appendChild(playerLiName);
                 var playerSpan = document.createElement("span");
                 playerTag.appendChild(playerSpan);
-                playerSpan.innerHTML = myArr2.firstName + " " + myArr2.lastName;
+                playerSpan.innerHTML = myArrPlayer.firstName + " " + myArrPlayer.lastName;
                 playerLiName.appendChild(playerSpan);
                 var playerLiDetail = document.createElement("li");
-                playerLiDetail.setAttribute("class", "detail");
+                playerLiDetail.setAttribute("class", "detail statsHide");
+                playerLiDetail.setAttribute("id", "detailId" + myArrPlayer.id);
                 playerTag.appendChild(playerLiDetail);
-
+                //adding details: birth
                 var playerSpanBirth = document.createElement("span");
                 playerSpanBirth.setAttribute("class", "spanDetails");
-                playerSpanBirth.innerHTML = "Data urodzenia: " + myArr2.birth;
-
+                playerSpanBirth.innerHTML = "Data urodzenia: " + myArrPlayer.birth;
+                //adding details: number
                 var playerSpanNumber = document.createElement("span");
                 playerSpanNumber.setAttribute("class", "spanDetails");
-                playerSpanNumber.innerHTML = "Nr zawodnika: " + myArr2.number;
-
+                playerSpanNumber.innerHTML = "Nr zawodnika: " + myArrPlayer.number;
+                //adding details: position
                 var playerSpanPosition = document.createElement("span");
                 playerSpanPosition.setAttribute("class", "spanDetails");
-                playerSpanPosition.innerHTML = "Pozycja: " + myArr2.position;
-
+                playerSpanPosition.innerHTML = "Pozycja: " + myArrPlayer.position;
+                //adding details: height
                 var playerSpanHeight = document.createElement("span");
                 playerSpanHeight.setAttribute("class", "spanDetails");
-                playerSpanHeight.innerHTML = "Wzrost: " + myArr2.height;
-
+                playerSpanHeight.innerHTML = "Wzrost: " + myArrPlayer.height;
                 var arg2 = [];
                 arg2.push(playerSpanBirth);
                 arg2.push(playerSpanNumber);
@@ -114,40 +118,24 @@ function addPlayer(arr, country) {
     });
 }
 
-/////////////////////////////////////////////////////////////
-
-// function ustawKlase(action, player){
-// 	var spans = document.getElementById(player);
-// 	if(action === "hide"){
-// 			spans.classList.toggle("detailHide", true);
-// 			spans.classList.toggle("detailShow", false);
-// 	} else if(action === "show"){
-// 			spans.classList.toggle("detailShow", true);
-// 			spans.classList.toggle("detailHide", false);
-// 	}
-// }
-
-// document.getElementById("playerName1").addEventListener("click", function(){
-// 	eventAdd();
-// });
-
-// function eventAdd(){
-// 	ustawKlase("hide", "player1");
-// }
-
-// // function addEvents(){
-// // 	console.log("test1");
-// // 	var spans = document.getElementById("player1");
-// // 	console.log("test2");
-// // 	console.log(spans.getAttribute("id"));
-// // 	spans.addEventListener("click", function(){
-// // 		eventAdd(spans);
-// // 	});
-// // 	console.log('test6');
-// // }
-
-// // function eventAdd(spans){
-// // 	ustawKlase("hide", "playerName1");
-// // }
-
-// // addEvents();
+function addEventsDetails(arr, country){
+    var parent = "";
+    [].forEach.call(arr.team, function(myArr){
+        if(myArr.name === country)
+        {
+            [].forEach.call(myArr.coach, function(myCoach){
+                parent = document.getElementById("nameId" + myCoach.id);
+                parent.addEventListener("click", function(){
+                    toggle("detailId" + myCoach.id);
+                });
+            });
+            [].forEach.call(myArr.player, function(myPlayer){
+                parent = document.getElementById("nameId" + myPlayer.id);
+                parent.addEventListener("click", function(){
+                    toggle("detailId" + myPlayer.id);
+                    console.log("detailId" + myPlayer.id);
+                });
+            });
+        }
+    });
+}
