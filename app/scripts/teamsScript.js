@@ -34,9 +34,14 @@ function addCountry(arr){
 		var teamLi = document.createElement("li");
 		var teamName = document.createElement("a");
 		var teamLink = document.createElement("a");
+		var teamFlag = document.createElement("div");
+		teamFlag.setAttribute("class", "ball");
+		teamFlag.setAttribute("id", "flag" + myArr.short);
+		teamFlag.style.backgroundImage = "url('" + myArr.url + "')";
 		teamLi.setAttribute("class", "team");
 		teamLi.setAttribute("id", "team" + myArr.short);
-		teamName.innerHTML = myArr.name;
+		teamName.appendChild(teamFlag);
+		teamName.innerHTML += myArr.name;
 		teamLink.href = "team.html?" + myArr.name;
 		teamTag.appendChild(teamLi);
 		teamLi.appendChild(teamName);
