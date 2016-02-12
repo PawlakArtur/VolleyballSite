@@ -20,6 +20,7 @@ function addCountry(arr, country) {
         if(myArr.name === country){
             var h3Tag = document.getElementsByTagName("h3");
             h3Tag[0].innerHTML = myArr.name;
+            document.title = country;
         }
     });
 }
@@ -61,8 +62,15 @@ function addCoach(arr, country) {
                 coachTag.appendChild(coachLiDetail);
 
                 var coachSpanBirth = document.createElement("span");
+                var coachSpanBirthValue = document.createElement("span");
+                var coachSpanBirthValue2 = document.createElement("span");
                 coachSpanBirth.setAttribute("class", "spanDetails");
-                coachSpanBirth.innerHTML = "Data urodzenia: " + myArrCoach.birth;
+                coachSpanBirthValue.setAttribute("class", "spanDetailsValue");
+                coachSpanBirthValue2.setAttribute("class", "spanDetailsValue");
+                coachSpanBirthValue.innerHTML = "Data urodzenia: ";
+                coachSpanBirthValue2.innerHTML = myArrCoach.birth;
+                coachSpanBirth.appendChild(coachSpanBirthValue);
+                coachSpanBirth.appendChild(coachSpanBirthValue2);
 
                 var childrens = [];
                 childrens.push(coachSpanBirth);
@@ -92,20 +100,49 @@ function addPlayer(arr, country) {
                 playerTag.appendChild(playerLiDetail);
                 //adding details: birth
                 var playerSpanBirth = document.createElement("span");
+                var playerSpanBirthValue = document.createElement("span");
+                var playerSpanBirthValue2 = document.createElement("span");
                 playerSpanBirth.setAttribute("class", "spanDetails");
-                playerSpanBirth.innerHTML = "Data urodzenia: " + myArrPlayer.birth;
+                playerSpanBirthValue.setAttribute("class", "spanDetailsValue");
+                playerSpanBirthValue2.setAttribute("class", "spanDetailsValue");
+                playerSpanBirthValue.innerHTML = "Data urodzenia: ";
+                playerSpanBirthValue2.innerHTML = myArrPlayer.birth;
+                playerSpanBirth.appendChild(playerSpanBirthValue);
+                playerSpanBirth.appendChild(playerSpanBirthValue2);
                 //adding details: number
                 var playerSpanNumber = document.createElement("span");
+                var playerSpanNumberValue = document.createElement("span");
+                var playerSpanNumberValue2 = document.createElement("span");
                 playerSpanNumber.setAttribute("class", "spanDetails");
-                playerSpanNumber.innerHTML = "Nr zawodnika: " + myArrPlayer.number;
+                playerSpanNumberValue.setAttribute("class", "spanDetailsValue");
+                playerSpanNumberValue2.setAttribute("class", "spanDetailsValue");
+                playerSpanNumberValue.innerHTML = "Nr zawodnika: ";
+                playerSpanNumberValue2.innerHTML = myArrPlayer.number;
+                playerSpanNumber.appendChild(playerSpanNumberValue);
+                playerSpanNumber.appendChild(playerSpanNumberValue2);
                 //adding details: position
                 var playerSpanPosition = document.createElement("span");
+                var playerSpanPositionValue = document.createElement("span");
+                var playerSpanPositionValue2 = document.createElement("span");
                 playerSpanPosition.setAttribute("class", "spanDetails");
-                playerSpanPosition.innerHTML = "Pozycja: " + myArrPlayer.position;
+                playerSpanPositionValue.setAttribute("class", "spanDetailsValue");
+                playerSpanPositionValue2.setAttribute("class", "spanDetailsValue");
+                playerSpanPositionValue.innerHTML = "Pozycja: ";
+                playerSpanPositionValue2.innerHTML = myArrPlayer.position;
+                playerSpanPosition.appendChild(playerSpanPositionValue);
+                playerSpanPosition.appendChild(playerSpanPositionValue2);
                 //adding details: height
                 var playerSpanHeight = document.createElement("span");
+                var playerSpanHeightValue = document.createElement("span");
+                var playerSpanHeightValue2 = document.createElement("span");
                 playerSpanHeight.setAttribute("class", "spanDetails");
-                playerSpanHeight.innerHTML = "Wzrost: " + myArrPlayer.height;
+                playerSpanHeightValue.setAttribute("class", "spanDetailsValue");
+                playerSpanHeightValue2.setAttribute("class", "spanDetailsValue");
+                playerSpanHeightValue.innerHTML = "Wzrost: ";
+                playerSpanHeightValue2.innerHTML = myArrPlayer.height;
+                playerSpanHeight.appendChild(playerSpanHeightValue);
+                playerSpanHeight.appendChild(playerSpanHeightValue2);
+
                 var arg2 = [];
                 arg2.push(playerSpanBirth);
                 arg2.push(playerSpanNumber);
@@ -133,7 +170,6 @@ function addEventsDetails(arr, country){
                 parent = document.getElementById("nameId" + myPlayer.id);
                 parent.addEventListener("click", function(){
                     toggle("detailId" + myPlayer.id);
-                    console.log("detailId" + myPlayer.id);
                 });
             });
         }
