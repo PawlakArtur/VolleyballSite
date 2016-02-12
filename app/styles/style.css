@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+.under{
+  margin: 200px 0 0 200px;
+  font-size: 50px;
+}
+
 /* menu glowne */
 
 nav{
@@ -53,6 +58,27 @@ nav ul li .fa-home{
 
 /* menu druzyny */
 
+.ball{
+  display: inline-block;
+  margin: 0 10px 0 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: solid 1px #2E2E2E;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  vertical-align: sub;
+}
+
+.ball:hover{
+  border: solid 1px #404040;
+}
+
+.team{
+  background-color:#EEE;
+}
+
 .teams{
   position: relative;
   top: 60px;
@@ -78,11 +104,10 @@ nav ul li .fa-home{
 }
 
 .teams ul li a:first-child {
+  padding: 0 0 0 10px;
   width: 75%;
   display:inline-block;
   text-decoration:none;
-  background-color:#EEE;
-  padding:10px;
   color: #777;
   border:1px solid transparent;
   border-right: 1px solid #CCC;
@@ -95,10 +120,9 @@ nav ul li .fa-home{
 .teams ul li a:last-child{
   width: 25%;
   display:inline-block;
-  padding: 10px;
+  padding: 11px;
   text-align: center;
   text-decoration: none;
-  background-color:#EEE;
   /* color:#00A0AA; */
   color: #777;
 }
@@ -132,10 +156,10 @@ nav ul li .fa-home{
 
 .stats{
   display: inline-block;
-  width: 100%;
-  background-color: #EEE;
-  margin: 0;
-  padding: 15px 15px 5px 5px;
+	width: 100%;
+	background-color: #EEE;
+	margin: 0;
+	padding: 15px 15px 5px 5px;
 }
 
 .statsHide{
@@ -148,12 +172,12 @@ nav ul li .fa-home{
 
 .window{
   position: relative;
-  display: inline-block;
-  width: 50%;
-  margin: 0;
-  padding: 5px 15px;
+	display: inline-block;
+	width: 50%;
+	margin: 0;
+	padding: 5px 15px;
   border: 1px solid #CCC;
-  background-color: #F7F7F7;
+	background-color: #F7F7F7;
 }
 
 .triangleBorder{
@@ -250,10 +274,27 @@ H3{
   padding: 5px 0 5px 10px;
 }
 
+#coach li, #player li{
+  margin: 2px 0 0 15px;
+}
+
+#coach li:first-child, #player li:first-child{
+  margin-left: 0;
+}
+
+.name{
+  cursor: pointer;
+}
+
+.name:hover{
+  color: #404040;
+}
+
 .detail{
+  margin-left: 0 !important;
   padding: 15px 0 10px 10px;
-  border-bottom: 1px solid #CCC;
-  width: 50%;
+  /*border-bottom: 1px solid #CCC;*/
+  width: 95%;
 }
 
 .detail:last-child{
@@ -262,56 +303,17 @@ H3{
 
 .spanDetails{
   display: block;
+  margin: 2px 0;
+  padding: 0 0 0 15px;
+  border-bottom: 1px solid #CCC;
 }
 
+.spanDetailsValue{
+  width: 45%;
+  display: inline-block;
+}
 
 /********************************** /Team ***********************************/
-
-/*druzyny kulki*/
-
-.flags{
-  position: relative;
-  top: 100px;
-}
-
-.ball{
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: solid 2px #2E2E2E;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
-.ball:hover{
-  border: solid 2px #404040;
-}
-
-.polandFlag{
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/archive/1/12/20111003025458!Flag_of_Poland.svg');
-}
-
-.brazilFlag{
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png');
-}
-
-.russiaFlag{
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Russia_%281991-1993%29.svg/2000px-Flag_of_Russia_%281991-1993%29.svg.png');
-}
-
-.germanyFlag{
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Flag_of_Germany_%283-2_aspect_ratio%29.svg/2000px-Flag_of_Germany_%283-2_aspect_ratio%29.svg.png');
-}
-
-.italyFlag{
-  background-image: url('https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg');
-}
-
-.franceFlag{
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Civil_and_Naval_Ensign_of_France.svg/2000px-Civil_and_Naval_Ensign_of_France.svg.png');
-}
 
 @media (max-width: 480px){
   nav ul li a span{
