@@ -9,14 +9,15 @@ const Message = React.createClass({
                 <Link to={`/view-message/${message.id}`}>
                     <h5>{message.title}</h5>
                 </Link>
+                <p>{message.message}</p>
                 <button className="btn" onClick={this.props.increment.bind(null, i)}>
                     <i className="material-icons">call_made</i>
                     {message.likes}
                 </button>
-                <button className="btn">
+                <Link to={`/view-message/${message.id}`} className="btn">
                     <i className="material-icons">mode_edit</i>
                     {comments[message.id] ? comments[message.id].length : 0}
-                </button>
+                </Link>
             </div>
         )
     }
