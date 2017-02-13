@@ -4,7 +4,7 @@ import Message from './Message'
 const MessagesGrid = React.createClass({
     render() {
         return (
-            <div>
+            <div className="row">
                 {this.props.messages.map((message, i) => <Message {...this.props} key={i} i={i} message={message} />)}
             </div>
         )
