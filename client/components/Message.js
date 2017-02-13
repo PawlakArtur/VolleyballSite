@@ -9,7 +9,7 @@ const Message = React.createClass({
                 <Link to={`/view-message/${message.id}`}>
                     <h5>{message.title}</h5>
                 </Link>
-                <button className="btn" onClick={this.a}>
+                <button className="btn" onClick={this.props.increment.bind(null, i)}>
                     <i className="material-icons">call_made</i>
                     {message.likes}
                 </button>

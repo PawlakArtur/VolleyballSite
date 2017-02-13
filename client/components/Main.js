@@ -6,10 +6,10 @@ const Main = React.createClass({
         return (
             <main>
                 <nav>
-                    <div class="nav-wrapper">
-                        <a href="#" class="brand-logo"><Link to="/">Volleyball</Link></a>
+                    <div className="nav-wrapper">
+                        <div className="brand-logo"><Link to="/">Volleyball</Link></div>
                         <ul id="nav-mobile" className="right">
-                            <li><a href="">Drużyny</a></li>
+                            <li><Link to="/">Drużyny</Link></li>
                         </ul>
                     </div>
                 </nav>
