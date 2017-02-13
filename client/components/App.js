@@ -5,7 +5,10 @@ import Main from './Main';
 
 function mapStateToProps(state) {
     return {
-
+        teams: state.teams,
+        tournaments: state.tournaments,
+        messages: state.messages,
+        comments: state.comments
     }
 }
 
