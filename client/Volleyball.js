@@ -19,7 +19,7 @@ const router = (
         <Router history={history}>
             <Route path="/" component={App}>
                 <IndexRoute component={MessagesGrid}></IndexRoute>
-                <Route path="/view-message/:teamId" component={MessageDetails}></Route>
+                <Route path="/view-message/:messageId" component={MessageDetails}></Route>
                 <Route path="/teams" component={TeamsGrid}></Route>
                 <Route path="/view-team/:teamId" component={Team}></Route>
             </Route>

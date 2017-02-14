@@ -10,11 +10,19 @@ const MessageComments = React.createClass({
             </div>
         )
     },
+    handleSubmit(e) {
+        e.preventDefault();
+        const { messageId } = this.props.params;
+        const author = this.refs.author.value;
+        const comment = this.refs.comment.value;
+        this.props.addComment(messageId, author, comment);
+
+    },
     render() {
         return (
             <div className="col s8">
                 {this.props.messageComments.map(this.renderComment)}
-                <form ref="commentForm">
+                <form ref="commentForm" onSubmit={this.handleSubmit}>
                     <input type="text" ref="author"/>
                     <input type="text" ref="comment"/>
                     <input type="submit" hidden/>

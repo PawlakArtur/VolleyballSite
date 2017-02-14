@@ -4,10 +4,10 @@ import MessageComments from './MessageComments';
 
 const MessageDetails = React.createClass({
     render() {
-        const { teamId } = this.props.params
-        const id = this.props.messages.findIndex(message => message.id.toString() === teamId);
+        const { messageId } = this.props.params;
+        const id = this.props.messages.findIndex(message => message.id.toString() === messageId);
         const message = this.props.messages.filter(message => message.id === id)[0];
-        const messageComments = this.props.comments[teamId] || [];
+        const messageComments = this.props.comments[messageId] || [];
         return (
             <div className="row">
                 <Message i={id} message={message} {...this.props}/>

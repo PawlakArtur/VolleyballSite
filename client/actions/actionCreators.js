@@ -25,6 +25,7 @@ export function removeMessage(id, i) {
 }
 
 export function addComment(id, author, comment) {
+    console.log(id, " ", author, " ", comment);
     return {
         type: 'ADD_COMMENT',
         id,
