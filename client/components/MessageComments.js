@@ -3,18 +3,16 @@ import React from 'react';
 const MessageComments = React.createClass({
     renderComment(comment, i) {
         return (
-            <div>
-                <p>
-                    <p>Autor: {comment.author}</p>
-                    <p>Komantarz: {comment.comment}</p>
-                    <button>&times;</button>
-                </p>
+            <div key={i}>
+                <p>Autor: {comment.author}</p>
+                <p>Komantarz: {comment.comment}</p>
+                <button>&times;</button>
             </div>
         )
     },
     render() {
         return (
-            <div>
+            <div className="col s8">
                 {this.props.messageComments.map(this.renderComment)}
                 <form ref="commentForm">
                     <input type="text" ref="author"/>
