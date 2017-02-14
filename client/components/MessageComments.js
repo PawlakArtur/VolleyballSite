@@ -6,7 +6,7 @@ const MessageComments = React.createClass({
             <div key={i}>
                 <p>Autor: {comment.author}</p>
                 <p>Komantarz: {comment.comment}</p>
-                <button>&times;</button>
+                <button onClick={this.props.removeComment.bind(null, this.props.params.messageId, i)}>&times;</button>
             </div>
         )
     },
@@ -16,7 +16,7 @@ const MessageComments = React.createClass({
         const author = this.refs.author.value;
         const comment = this.refs.comment.value;
         this.props.addComment(messageId, author, comment);
-
+        this.refs.commentForm.reset();
     },
     render() {
         return (
